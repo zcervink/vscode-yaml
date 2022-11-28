@@ -27,7 +27,7 @@ export function schemaIsSetTest(): void {
       const schema = await statusbar.findElements(By.xpath('.//a[@aria-label="kustomization.yaml, Select JSON Schema"]'));
 
       if (schema.length != 1) {
-        throw new Error("The appropriate JSON schema has not been selected.");
+        throw new Error('The appropriate JSON schema has not been selected.');
       }
     });
 
@@ -41,13 +41,3 @@ export function schemaIsSetTest(): void {
 function delay(milliseconds: number): Promise<number> {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
 }
-
-
-
-async function loggg(text: string) {
-  const { exec } = await require('child_process');
-  exec('echo ' + text + ' >> ~/Desktop/aaa.txt');
-}
-
-
-

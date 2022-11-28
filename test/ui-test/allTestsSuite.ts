@@ -4,8 +4,8 @@ import { customTagsTest } from './customTagsTest';
 import { schemaIsSetTest } from './schemaIsSetTest';
 
 describe('VSCode YAML - UI tests', () => {
-  //extensionUIAssetsTest();
-  //contentAssistSuggestionTest();
-  //customTagsTest();
+  extensionUIAssetsTest();
+  contentAssistSuggestionTest();
+  customTagsTest();
   schemaIsSetTest();
 });
