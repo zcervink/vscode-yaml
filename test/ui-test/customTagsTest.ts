@@ -29,7 +29,7 @@ export function customTagsTest(): void {
 
       await driver.actions().sendKeys(Key.chord(TextEditor.ctlKey, 's')).perform();
       input = await InputBox.create();
-      await input.setText('~/customTagsTestFile.yaml');
+      await input.setText('~/kustomization.yaml');
       await input.confirm();
 
       await delay(2000);
@@ -52,7 +52,7 @@ export function customTagsTest(): void {
       /* eslint-disable */
       const fs = require('fs');
       const homeDir = os.homedir();
-      const pathtofile = path.join(homeDir, 'customTagsTestFile.yaml');
+      const pathtofile = path.join(homeDir, 'kustomization.yaml');
 
       if (fs.existsSync(pathtofile)) {
         fs.rmSync(pathtofile, { recursive: true, force: true });
